@@ -1,0 +1,46 @@
+/* Styling for Home page*/
+
+.tableofcontents{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+h3{
+    font-size: 1.5cm;
+
+}
+
+.divformatting{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.maincontent{
+
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+h4{
+    font-size: 1cm;
+}
+
+h5{
+    font-size: 0.8cm;
+}
+
+.graphsandimages{
+    height: auto;
+    width: 30cm; 
+    border: 1px solid black;
+    padding: 5px;
+    background-color:#5cb25d;
+}
+
+figcaption{
+    text-align: justify;
+    color:dimgray;
+}

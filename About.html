@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Universalstyles.css">
+        <link rel="stylesheet" type="text/css" href="AboutStyles.css">
+    </head>
+    <body>
+        <div1 class="pagetop pagetopbackground">
+            <div>
+                <h1 style="font-size: 3cm;">GlobalGuardians
+                </h1>
+            </div>
+            <div>
+                <img id="Logo" src="shieldlogo2.jpeg" alt="" >
+            </div>
+        </div1>
+            <div2 id="navbar">
+                <div id="navitems">
+                    <form id="form"> 
+                        <input type="search" id="query" name="q" placeholder="Search Keyword ...">
+                        <button>Search</button>
+                      </form>
+                </div>
+                <div id="navitems">
+                    <form action="Home.html">
+                        <button id="navbuttons">Home</button
+                            ></form>
+                    </div>
+                <div id="navitems">
+                    <form action="About.html">
+                        <button id="navbuttons">About us</button>
+                    </form>
+                </div>
+                <form action="signup.html">
+                <div id="navitems">
+                    <button id="navbuttons">Sign Up/Login</button>
+                </form>
+                </div>
+                <form action="">
+                <div id="navitems">
+                    <select id="navbuttons">
+                        <option class = "combobox" value="">Select Language</option>
+                        <option class = "combobox" value="">English</option>
+                        <option class = "combobox" value="">Bahasa Melayu</option>
+                        <option class = "combobox" value="">French</option>
+                        <option class = "combobox" value="">Spanish</option>
+                        <option class = "combobox" value="">German</option>
+                    </select>
+                </form>
+            </div>
+            </div2>
+
+            <section class="backgroundimage">
+
+                <section1 class ="section1">
+                    <div style="text-align:center;"><h3 style="font-size: 1.5cm;">About GlobalGuardians</h3></div>
+                    <div style="display: flex; justify-content: center; ">
+                        <figure>
+                            <img src="pexels-markus-spiske-2559749.jpg" alt="" style="height:12cm; width:20cm; margin-top: 1cm;">
+                            <figcaption>&#169 Markus spiske</figcaption>
+                        </figure>
+                    </div>
+
+            <div3>
+                <p class="margins"><b>Vision:</b> To create a pollution-free and healthy planet where all life can live</p>
+                <p class="margins"> <b> Mission: </b> To sow a sense of responsibility within the hearts of the general population to take care of Mother Earth </p>
+                <p class="margins" style="text-align:justify ;"><b>Background:</b>
+                    GlobalGuardians was founded by students from Sunway University in Petaling Jaya, Malaysia.
+                    The students, who wish to remain anonymous, felt that the Earth has reached a point where it can no longer be saved if pollution continues the way it has for decades.
+                    Therefore, the students founded GlobalGuardians as a means for spreading awareness to the general population regarding environmental issues.
+                    GlobalGuardians main environmental focus is on global warming as it is an issue that will cause irreversible damage to the planet if it is not stopped.
+                    </p>
+
+                <p class="margins" style="text-align: justify;"><b>How You Can Help:</b>
+                    If you are interested in helping to save the planet, the best thing you can do is share this website to other people. Sharing this website will allow our 
+                    message to spread across the globe and raise awareness on global warming. Many among the populace are still unaware about the detrimental effects that global warming will 
+                    have on our planet. Hence, the best way to remedy this situation is to spread the message. <br><br>
+                    Another way you can help is by lending a hand here at GlobalGuardians. We are currently looking for dedicated writers that can help us by writing articles to spread our message.
+                    We appreciate all the help that we can get, Thank you in advance.
+                    <br>
+                    <p><i>Sapientia Potentia Est:</i> Knowledge is Power</p> <br><br><br>
+                </p>
+                <p><b style="font-size: 35px;">Contact Us:</b></h3> <br><br> If you have any questions about our message or if you wish to get involved with Global Guardians, you can contact us using the form below.</p>
+                   <div style="display: flex; flex-direction: column;">
+                <form name="message" class="messageform" onsubmit="return submitMessage()" method="post">
+                    <label for="contact_name">Name:</label>
+                    <input type="text" id="contact_name" name = "contact_name" oninput="validateName()">
+                    <span class="notifications" id="name_error"></span> <br><br>
+
+                    <label for="contact_email">Email:</label>
+                    <input type="text" name="contact_email" id="contact_email" oninput="validateEmail()">
+                    <span class="notifications" id="email_error"></span> <br><br>
+
+                    <label for="msg">Message:</label>
+                    <span class="notifications" id="message_error"></span> <br><br>
+                    <textarea name="msg" id="msg" cols="50" rows="8" oninput="validateMessage()"></textarea> <br><br>
+
+                    <input type="submit" value="Send message" onclick="return validateContactForm()">
+                    <span class="notifications" id="submit_error"></span>
+                </form>
+                   </div>
+
+            </div3>
+                </section1>
+            </section>
+            
+            <script src="aboutpagescript.js"></script>
+                
+    </body>
+</html>

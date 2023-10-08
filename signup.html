@@ -1,0 +1,109 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Sign up</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type = "text/css" href="Universalstyles.css">
+        <link rel="stylesheet" href="Signupstyles.css" type="text/css">
+    </head>
+    <body>
+        <div1 class="pagetop pagetopbackground">
+            <div>
+                <h1 style="font-size: 3cm;">GlobalGuardians
+                </h1>
+            </div>
+            <div>
+                <img id="Logo" src="shieldlogo2.jpeg" alt="" >
+            </div>
+        </div1>
+            <div2 id="navbar">
+                <div id="navitems">
+                    <form id="form"> 
+                        <input type="search" id="query" name="q" placeholder="Search Keyword ...">
+                        <button>Search</button>
+                      </form>
+                </div>
+                <div id="navitems">
+                    <form action="Home.html">
+                        <button id="navbuttons">Home</button
+                            ></form>
+                    </div>
+                <div id="navitems">
+                    <form action="About.html">
+                        <button id="navbuttons">About us</button>
+                    </form>
+                </div>
+                <form action="signup.html">
+                <div id="navitems">
+                    <button id="navbuttons">Sign Up/Login</button>
+                </form>
+                </div>
+                <form action="">
+                <div id="navitems">
+                    <select id="navbuttons">
+                        <option class = "combobox" value="">Select Language</option>
+                        <option class = "combobox" value="">English</option>
+                        <option class = "combobox" value="">Bahasa Melayu</option>
+                        <option class = "combobox" value="">French</option>
+                        <option class = "combobox" value="">Spanish</option>
+                        <option class = "combobox" value="">German</option>
+                    </select>
+                </form>
+            </div>
+            </div2>
+         
+
+            <section class="backgroundimage">
+
+                <section1 class="section1">
+
+                    <h3>Sign Up</h3>
+
+                    <p class="info">
+                        If you would like to sign up for free to our newsletter to receive updates on our articles as well as additional reading material, please fill up this form. <br><br>
+                        Note: You will automatically receive emails about relevant information. You can unsubscribe at any time by simply dropping us a message using the "Contact Us" section in our "about" page.
+                    </p>
+                    <p>
+                        <div class="formdivs">
+                        <form  action="" class="forms" onsubmit="return signUp()">
+                            <label for="fullname">Name:</label>
+                            <input type="text" id="fullname" name = "fullname" size="50" oninput="validateName()">
+                            <span id="fname_error"></span><br><br>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" size="35" oninput="validateEmail()">
+                            <span id="email_error"></span><br><br>
+                            <input type="submit" value="Sign Up" onclick="return validateSignupForm()">
+                            <span id="signup_error"></span>
+                        </form>
+                        </div>
+                    </p>
+                    <h3>Log in</h3>
+                    <p class="info">You are required to log in in order to make any changes to this website or articles. <br>(For GlobalGuardian moderators only)
+                    <br><br>
+                    If you are interested in helping GlobalGuardians by becoming a moderator for us, feel free to contact us and we will get back to you as soon as possible. Thank you for your understanding. 
+
+                    </p>
+                    <p>
+                        <div class="formdivs">
+                            <form  action="Home.html" method="post" class="forms" onsubmit="return Login()">
+                                <label for="uname">Username:</label>
+                                <input type="text" id="uname" name = "uname" size="20" onkeypress="preventSpace(event)" oninput="validateUsername()">
+                                <span id="uname_error"></span><br><br>
+                                <label for="user_password">Password:</label>
+                                <input type="password" id="user_password" name="user_password" size="25" oninput="validatePassword();blockWhitespace(event)">
+                                <span id="password_error"></span><br><br>
+                                <label for="user_email">Email:</label>
+                                <input type="text" name="user_email" id="user_email" size="35" oninput="validateUserEmail()">
+                                <span id="user_email_error"></span><br><br>
+                                <input type="submit" value="Log In" onclick="return validateLogin()">
+                                <span id="login_error"></span>
+
+                            </form>
+                            </div>
+                    </p>
+
+                </section1>
+            </section>
+            <script src="signupscript.js"></script>
+                </body>
+</html>
